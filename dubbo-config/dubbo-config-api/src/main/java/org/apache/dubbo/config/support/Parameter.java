@@ -32,10 +32,22 @@ public @interface Parameter {
 
     String key() default "";
 
+    /**
+     * 是否必填
+     * @return
+     */
     boolean required() default false;
 
+    /**
+     * 是否忽略
+     * @return
+     */
     boolean excluded() default false;
 
+    /**
+     * 是否转义
+     * @return
+     */
     boolean escaped() default false;
 
     boolean attribute() default false;
